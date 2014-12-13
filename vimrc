@@ -3,7 +3,6 @@ call pathogen#infect()
 
 syntax on
 color Dracula
-set t_Co=256
 
 filetype plugin indent on
 
@@ -34,4 +33,7 @@ set noswapfile
 set expandtab
 set shiftwidth=4
 set tabstop=4
+set encoding=utf-8
 
+let g:airline_left_sep=''
+let g:airline_right_sep=''
