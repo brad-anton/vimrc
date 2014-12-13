@@ -1,8 +1,9 @@
 " Pathogen setup
 call pathogen#infect()
 
+set t_Co=256
 syntax on
-color Dracula
+color dracula
 
 filetype plugin indent on
 
