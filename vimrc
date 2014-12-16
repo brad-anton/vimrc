@@ -7,6 +7,17 @@ color dracula
 
 filetype plugin indent on
 
+let &t_SI .= "\<Esc>[?2004h"
+let &t_EI .= "\<Esc>[?2004l"
+
+inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
+
+function! XTermPasteBegin()
+    set pastetoggle=<Esc>[201~
+    set paste
+    return ""
+endfunction
+
 map <TAB> >gv
 map <S-TAB> <gv
 map <Enter> i<Enter>
