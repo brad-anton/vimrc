@@ -12,6 +12,8 @@ let &t_EI .= "\<Esc>[?2004l"
 
 inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
 
+set pastetoggle=<F2>
+
 function! XTermPasteBegin()
     set pastetoggle=<Esc>[201~
     set paste
